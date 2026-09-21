@@ -69,8 +69,16 @@ export const journeySteps: JourneyStep[] = [
     step: 9,
     stage: "STAGE 09",
     topic: "Deep Learning & Computer Vision",
-    focus: "Neural network architectures, PyTorch/TensorFlow, and convolutional feature extraction.",
+    focus: "Neural network architectures with PyTorch, CNNs, image classification, and computer vision with OpenCV.",
+    status: "completed",
+    details: "Completed the Computer Vision with OpenCV learning phase, including CNN-based image classification workflows."
+  },
+  {
+    step: 10,
+    stage: "STAGE 10",
+    topic: "Natural Language Processing",
+    focus: "Exploring the foundations of NLP and language-focused machine learning workflows.",
     status: "exploring",
-    details: "Currently expanding knowledge into deep artificial neural networks, computer vision, and modern GenAI prompt engineering workflows."
+    details: "Currently learning NLP as the next stage of my AI/ML journey."
   }
 ];

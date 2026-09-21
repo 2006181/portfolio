@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="text-slate-400 text-sm max-w-md leading-relaxed">
-              AI/ML Developer specializing in Artificial Intelligence at ABESIT, Ghaziabad. Building practical Machine Learning algorithms, predictive pipelines, and Streamlit interfaces.
+              Aspiring AI Engineer and B.Tech CSE (AI) student at ABESIT, Ghaziabad, focused on Machine Learning, Deep Learning, Computer Vision, and NLP.
             </p>
 
             <div className="flex items-center gap-2 text-xs font-mono text-emerald-400">

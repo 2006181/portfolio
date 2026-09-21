@@ -155,7 +155,7 @@ export const Hero: React.FC = () => {
                 {/* User Portrait Image with Perfect Headroom & Centered Frame */}
                 <img
                   src="/images/rahul-gupta.png"
-                  alt="Rahul Gupta — AI/ML Developer"
+                  alt="Rahul Gupta — Aspiring AI Engineer"
                   className="relative z-10 w-full h-full object-cover object-[center_12%] transition-transform duration-500 group-hover:scale-105"
                 />
 
@@ -185,7 +185,7 @@ export const Hero: React.FC = () => {
                     </h3>
                   </div>
                   <p className="font-mono text-[11px] text-cyber-cyan mt-0.5">
-                    B.Tech CSE — Artificial Intelligence
+                    B.Tech CSE (AI)
                   </p>
                 </div>
                 

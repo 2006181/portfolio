@@ -12,7 +12,9 @@ export const skillCategories: SkillCategory[] = [
       { name: "Random Forest", category: "Machine Learning", description: "Ensemble learning with bootstrap aggregation and random feature subsets." },
       { name: "KNN (K-Nearest Neighbors)", category: "Machine Learning", description: "Instance-based metric learning for pattern recognition." },
       { name: "Naive Bayes", category: "Machine Learning", description: "Probabilistic classifier leveraging Bayes' theorem with feature independence." },
-      { name: "K-Means Clustering", category: "Machine Learning", description: "Unsupervised centroid-based clustering for customer segmentation and grouping." }
+      { name: "K-Means Clustering", category: "Machine Learning", description: "Unsupervised centroid-based clustering for customer segmentation and grouping." },
+      { name: "Deep Learning", category: "Machine Learning", description: "Neural network architectures and representation learning for complex pattern recognition." },
+      { name: "Computer Vision with OpenCV", category: "Machine Learning", description: "Image processing and computer vision workflows using OpenCV." }
     ]
   },
   {
@@ -87,5 +89,7 @@ export const toolkitBadges = [
   { name: "GitHub", category: "Collaboration", icon: "Github", color: "#ffffff", border: "rgba(255, 255, 255, 0.3)" },
   { name: "MySQL", category: "RDBMS", icon: "Database", color: "#00758f", border: "rgba(0, 117, 143, 0.4)" },
   { name: "Jupyter", category: "Notebooks", icon: "BookOpen", color: "#f37626", border: "rgba(243, 118, 38, 0.4)" },
-  { name: "Google Colab", category: "Cloud ML", icon: "Cloud", color: "#f9ab00", border: "rgba(249, 171, 0, 0.4)" }
+  { name: "Google Colab", category: "Cloud ML", icon: "Cloud", color: "#f9ab00", border: "rgba(249, 171, 0, 0.4)" },
+  { name: "PyTorch", category: "Deep Learning", icon: "BrainCircuit", color: "#ee4c2c", border: "rgba(238, 76, 44, 0.4)" },
+  { name: "OpenCV", category: "Computer Vision", icon: "ScanLine", color: "#5c3ee8", border: "rgba(92, 62, 232, 0.4)" }
 ];
