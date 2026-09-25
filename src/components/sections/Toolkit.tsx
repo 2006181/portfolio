@@ -14,7 +14,8 @@ import {
   Cloud,
   Wrench,
   BrainCircuit,
-  ScanLine
+  ScanLine,
+  Zap
 } from 'lucide-react';
 import { toolkitBadges } from '../../data/skills';
 import { GithubIcon } from '../common/Icons';
@@ -37,6 +38,7 @@ export const Toolkit: React.FC = () => {
       case 'Cloud': return <Cloud className="w-5 h-5" />;
       case 'BrainCircuit': return <BrainCircuit className="w-5 h-5" />;
       case 'ScanLine': return <ScanLine className="w-5 h-5" />;
+      case 'Zap': return <Zap className="w-5 h-5" />;
       default: return <Wrench className="w-5 h-5" />;
     }
   };
@@ -56,7 +58,7 @@ export const Toolkit: React.FC = () => {
             </h3>
           </div>
           <span className="font-mono text-xs text-slate-400 bg-slate-900/80 px-3 py-1.5 rounded border border-slate-800 self-start sm:self-auto">
-            14 ESSENTIAL TECHNOLOGIES
+            {toolkitBadges.length} ESSENTIAL TECHNOLOGIES
           </span>
         </div>
 

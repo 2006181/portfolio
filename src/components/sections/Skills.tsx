@@ -15,6 +15,7 @@ export const Skills: React.FC = () => {
 
   const categoryIcons: Record<string, React.ReactNode> = {
     "Machine Learning": <Brain className="w-4 h-4" />,
+    "Natural Language Processing": <Sparkles className="w-4 h-4" />,
     "Data Science & Analysis": <BarChart3 className="w-4 h-4" />,
     "ML Engineering & Deployment": <Cpu className="w-4 h-4" />,
     "Programming Languages": <Code2 className="w-4 h-4" />,

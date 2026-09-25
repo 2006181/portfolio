@@ -155,7 +155,7 @@ export const Hero: React.FC = () => {
                 {/* User Portrait Image with Perfect Headroom & Centered Frame */}
                 <img
                   src="/images/rahul-gupta.png"
-                  alt="Rahul Gupta — Aspiring AI Engineer"
+                  alt="Rahul Gupta — AI/ML Developer"
                   className="relative z-10 w-full h-full object-cover object-[center_12%] transition-transform duration-500 group-hover:scale-105"
                 />
 
@@ -203,7 +203,7 @@ export const Hero: React.FC = () => {
                     Pipeline State
                   </div>
                   <div className="font-mono text-xs sm:text-sm text-white font-semibold mt-1">
-                    Supervised ML
+                    AI/ML & NLP
                   </div>
                 </div>
 
@@ -213,7 +213,7 @@ export const Hero: React.FC = () => {
                     Target Role
                   </div>
                   <div className="font-mono text-xs sm:text-sm text-white font-semibold mt-1">
-                    AI/ML Engineer
+                    AI/ML Developer
                   </div>
                 </div>
               </div>

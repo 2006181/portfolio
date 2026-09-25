@@ -135,10 +135,12 @@ export const AICoreOrb3D: React.FC<AICoreOrb3DProps> = ({ className = '', active
     if (coreMatRef.current) {
       if (activeCategory === 'Machine Learning') {
         coreMatRef.current.color.setHex(0xff007f);
+      } else if (activeCategory === 'Natural Language Processing') {
+        coreMatRef.current.color.setHex(0xb5179e);
       } else if (activeCategory === 'Data Science & Analysis') {
         coreMatRef.current.color.setHex(0x00f0ff);
       } else if (activeCategory === 'ML Engineering & Deployment') {
-        coreMatRef.current.color.setHex(0xb5179e);
+        coreMatRef.current.color.setHex(0x9d4edd);
       } else if (activeCategory === 'Programming Languages') {
         coreMatRef.current.color.setHex(0x10b981);
       } else {

@@ -40,7 +40,7 @@ export const Projects: React.FC = () => {
         />
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projectsData.map((project, idx) => (
             <motion.div
               key={project.id}

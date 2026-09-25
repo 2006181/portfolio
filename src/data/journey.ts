@@ -76,9 +76,25 @@ export const journeySteps: JourneyStep[] = [
   {
     step: 10,
     stage: "STAGE 10",
-    topic: "Natural Language Processing",
-    focus: "Exploring the foundations of NLP and language-focused machine learning workflows.",
+    topic: "Natural Language Processing (NLP)",
+    focus: "Text preprocessing pipelines, tokenization, stopword/punctuation/emoji cleaning, Bag of Words, TF-IDF vectorization, and NLP classification.",
+    status: "completed",
+    details: "Completed NLP foundations, mastering text preprocessing pipelines, CountVectorizer, TfidfVectorizer, and hands-on Emotion Detection classification."
+  },
+  {
+    step: 11,
+    stage: "STAGE 11",
+    topic: "Relational Databases & MySQL",
+    focus: "Relational database querying, schema structuring, table relationships, and SQL data retrieval.",
+    status: "completed",
+    details: "Completed database management foundations with MySQL, managing structured data and connecting database operations to application pipelines."
+  },
+  {
+    step: 12,
+    stage: "STAGE 12",
+    topic: "FastAPI & Backend Integration",
+    focus: "Building asynchronous REST APIs, request validation with Pydantic, routing, and backend model integration.",
     status: "exploring",
-    details: "Currently learning NLP as the next stage of my AI/ML journey."
+    details: "Currently exploring FastAPI to build robust APIs and integrate trained AI/ML models into real-world applications."
   }
 ];

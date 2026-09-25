@@ -43,9 +43,9 @@ export const factsStats = [
     accent: "pink" as const
   },
   {
-    value: "3",
-    label: "Featured ML Projects",
-    detail: "Supervised Models & EDA Systems",
+    value: "4",
+    label: "Featured AI/ML Projects",
+    detail: "NLP, ML Models & EDA Systems",
     accent: "purple" as const
   },
   {

@@ -87,7 +87,7 @@ export const Navbar: React.FC = () => {
                   RAHUL GUPTA
                 </span>
                 <span className="font-mono text-[10px] text-slate-400 tracking-widest uppercase">
-                  ASPIRING AI ENGINEER
+                  AI/ML DEVELOPER
                 </span>
               </div>
             </a>

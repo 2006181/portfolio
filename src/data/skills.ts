@@ -14,7 +14,23 @@ export const skillCategories: SkillCategory[] = [
       { name: "Naive Bayes", category: "Machine Learning", description: "Probabilistic classifier leveraging Bayes' theorem with feature independence." },
       { name: "K-Means Clustering", category: "Machine Learning", description: "Unsupervised centroid-based clustering for customer segmentation and grouping." },
       { name: "Deep Learning", category: "Machine Learning", description: "Neural network architectures and representation learning for complex pattern recognition." },
-      { name: "Computer Vision with OpenCV", category: "Machine Learning", description: "Image processing and computer vision workflows using OpenCV." }
+      { name: "Computer Vision with OpenCV", category: "Machine Learning", description: "Image processing and computer vision workflows using OpenCV." },
+      { name: "Natural Language Processing", category: "Machine Learning", description: "Text preprocessing pipelines, Bag of Words, TF-IDF, NLTK, and emotion classification modeling." }
+    ]
+  },
+  {
+    title: "Natural Language Processing",
+    iconName: "Sparkles",
+    accent: "purple",
+    skills: [
+      { name: "NLP Foundations & Applications", category: "Natural Language Processing", description: "Understanding what NLP is, why it is important in modern AI, and real-world NLP applications." },
+      { name: "Text Preprocessing Pipeline", category: "Natural Language Processing", description: "Full text preprocessing pipeline including lowercasing, punctuation removal, and emoji removal." },
+      { name: "Stopword Removal", category: "Natural Language Processing", description: "Filtering common non-informative stopwords using NLTK to retain meaningful vocabulary." },
+      { name: "Bag of Words (CountVectorizer)", category: "Natural Language Processing", description: "Converting text documents into numerical feature vectors using frequency-based Bag of Words." },
+      { name: "TF-IDF Vectorization", category: "Natural Language Processing", description: "Term Frequency-Inverse Document Frequency weighting and understanding key differences from Bag of Words." },
+      { name: "ML Techniques in NLP", category: "Natural Language Processing", description: "Applying common machine learning classification techniques on vectorized text representations." },
+      { name: "Emotion Detection from Scratch", category: "Natural Language Processing", description: "Hands-on Emotion Detection project built from scratch covering text cleaning to classification." },
+      { name: "NLP Tools & Libraries", category: "Natural Language Processing", description: "Hands-on practical implementation using Python, Pandas, NLTK, CountVectorizer, and TfidfVectorizer." }
     ]
   },
   {
@@ -38,7 +54,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "Feature Engineering", category: "ML Engineering", description: "Encoding categorical variables, handling missing values, scaling, and feature selection." },
       { name: "Train-Test Split", category: "ML Engineering", description: "Data partitioning strategies to evaluate generalization and prevent data leakage." },
       { name: "Model Evaluation", category: "ML Engineering", description: "Assessing performance via R², RMSE, Confusion Matrix, Precision, Recall, and F1-score." },
-      { name: "Streamlit", category: "ML Engineering", description: "Rapid interactive web UI creation for real-time model inference and dashboards." }
+      { name: "Streamlit", category: "ML Engineering", description: "Rapid interactive web UI creation for real-time model inference and dashboards." },
+      { name: "FastAPI", category: "ML Engineering", description: "Currently exploring FastAPI to build asynchronous REST APIs and integrate AI/ML models." }
     ]
   },
   {
@@ -82,9 +99,11 @@ export const toolkitBadges = [
   { name: "Scikit-Learn", category: "ML Library", icon: "Brain", color: "#f7931e", border: "rgba(247, 147, 30, 0.4)" },
   { name: "Pandas", category: "Data Wrangling", icon: "Table2", color: "#150458", border: "rgba(0, 240, 255, 0.4)" },
   { name: "NumPy", category: "Scientific Math", icon: "Binary", color: "#4d77cf", border: "rgba(77, 119, 207, 0.4)" },
+  { name: "NLTK", category: "NLP Library", icon: "BookOpen", color: "#306998", border: "rgba(48, 105, 152, 0.4)" },
   { name: "Matplotlib", category: "Plotting", icon: "PieChart", color: "#11557c", border: "rgba(0, 240, 255, 0.4)" },
   { name: "Seaborn", category: "Statistical Viz", icon: "LineChart", color: "#4c72b0", border: "rgba(255, 0, 127, 0.4)" },
   { name: "Streamlit", category: "App Deployment", icon: "Layers", color: "#ff4b4b", border: "rgba(255, 75, 75, 0.4)" },
+  { name: "FastAPI", category: "API Framework", icon: "Zap", color: "#05998b", border: "rgba(5, 153, 139, 0.4)" },
   { name: "Git", category: "Version Control", icon: "GitBranch", color: "#f05032", border: "rgba(240, 80, 50, 0.4)" },
   { name: "GitHub", category: "Collaboration", icon: "Github", color: "#ffffff", border: "rgba(255, 255, 255, 0.3)" },
   { name: "MySQL", category: "RDBMS", icon: "Database", color: "#00758f", border: "rgba(0, 117, 143, 0.4)" },

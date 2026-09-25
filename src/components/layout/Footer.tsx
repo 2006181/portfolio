@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="text-slate-400 text-sm max-w-md leading-relaxed">
-              Aspiring AI Engineer and B.Tech CSE (AI) student at ABESIT, Ghaziabad, focused on Machine Learning, Deep Learning, Computer Vision, and NLP.
+              AI/ML Developer and B.Tech CSE (AI) student at ABESIT, Ghaziabad, focused on Machine Learning, Deep Learning, Computer Vision, NLP, and FastAPI.
             </p>
 
             <div className="flex items-center gap-2 text-xs font-mono text-emerald-400">

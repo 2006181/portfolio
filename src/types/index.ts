@@ -1,6 +1,6 @@
 export interface Skill {
   name: string;
-  category: 'Programming' | 'Machine Learning' | 'Data Science' | 'ML Engineering' | 'Tools & Database' | 'Other';
+  category: 'Programming' | 'Machine Learning' | 'Data Science' | 'ML Engineering' | 'Tools & Database' | 'Natural Language Processing' | 'Other';
   description: string;
   highlight?: boolean;
 }

@@ -2,8 +2,31 @@ import type { Project } from '../types';
 
 export const projectsData: Project[] = [
   {
-    id: "student-score-prediction",
+    id: "emotion-detection-nlp",
     number: "01",
+    title: "Emotion Detection using NLP",
+    category: "Natural Language Processing / Classification",
+    description: "An end-to-end NLP web application that detects emotions from text input using text preprocessing, Bag of Words feature representation, and Machine Learning classification.",
+    problem: "Textual communication lacks vocal and facial cues, making automated emotion detection essential for customer sentiment analysis, feedback classification, and empathetic conversational agents.",
+    approach: "Engineered a robust NLP preprocessing pipeline featuring lowercasing, punctuation and emoji removal, and NLTK stopword filtering. Applied CountVectorizer (Bag of Words) for text feature extraction and trained a supervised Machine Learning classifier deployed on Streamlit.",
+    technologies: ["Python", "NLP", "NLTK", "CountVectorizer", "Scikit-Learn", "Streamlit", "Pandas"],
+    mlAlgorithm: "Machine Learning Text Classification (Bag of Words / CountVectorizer)",
+    evaluationMetrics: ["Multi-class Classification Metrics", "Confusion Matrix Analysis", "Precision & Recall", "Validation Partition Evaluation"],
+    keyLearning: "Mastered the complete NLP lifecycle: from raw text preprocessing and tokenization to Bag of Words vectorization and real-time interactive Streamlit emotion inference.",
+    highlights: [
+      "Full Text Preprocessing Pipeline",
+      "Emoji & Stopword Removal (NLTK)",
+      "Bag of Words / CountVectorizer",
+      "ML Emotion Classification",
+      "Interactive Streamlit Web App"
+    ],
+    visualType: "classification",
+    githubUrl: "https://github.com/2006181/Emotions-detection-using-NLP-.git",
+    liveDemoUrl: "https://2006181-emotions-detection-using-nlp--app-4cln8n.streamlit.app/"
+  },
+  {
+    id: "student-score-prediction",
+    number: "02",
     title: "Student Score Prediction App",
     category: "Machine Learning / Regression",
     description: "An end-to-end Machine Learning web application that predicts student exam scores based on study hours and historical academic performance metrics.",
@@ -26,7 +49,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "student-success-predictor",
-    number: "02",
+    number: "03",
     title: "Student Success Predictor",
     category: "Machine Learning / Classification",
     description: "A binary classification system built to predict student pass/fail outcomes by analyzing attendance trends, weekly study duration, and continuous internal assessment scores.",
@@ -49,7 +72,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "diwali-sales-analysis",
-    number: "03",
+    number: "04",
     title: "Diwali Sales Analysis",
     category: "Data Science / Exploratory Data Analysis",
     description: "Comprehensive exploratory data analysis on festive retail transactions to uncover high-value customer demographics, top revenue-driving product categories, and geographical distribution.",
