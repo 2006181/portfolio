@@ -2,8 +2,43 @@ import type { Project } from '../types';
 
 export const projectsData: Project[] = [
   {
-    id: "emotion-detection-nlp",
+    id: "california-house-price-prediction",
     number: "01",
+    title: "California House Price Prediction",
+    category: "Machine Learning / Regression",
+    description: "An end-to-end Machine Learning application that predicts California house prices using a Random Forest Regression model. It includes a FastAPI backend, a Streamlit frontend, individual house price prediction, and bulk predictions through CSV file uploads.",
+    problem: "Real estate valuation requires analyzing multidimensional geographic, demographic, and structural variables such as median income, housing age, and location coordinates to make accurate price predictions.",
+    approach: "Engineered a complete end-to-end ML architecture using Random Forest Regression for price prediction, coupled with a robust FastAPI backend service and an interactive Streamlit frontend supporting single predictions and batch CSV uploads.",
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Random Forest Regression",
+      "FastAPI",
+      "Streamlit",
+      "Joblib",
+      "Render",
+      "GitHub"
+    ],
+    mlAlgorithm: "Random Forest Regression (Ensemble Learning)",
+    evaluationMetrics: ["Root Mean Squared Error (RMSE)", "R² Score (Coefficient of Determination)", "Mean Absolute Error (MAE)"],
+    keyLearning: "Architected an end-to-end production ML system integrating a FastAPI backend API with a Streamlit UI, handling both individual and bulk CSV inference workflows.",
+    highlights: [
+      "Random Forest Regression Model",
+      "FastAPI REST API & Docs",
+      "Interactive Streamlit Frontend",
+      "Individual & Bulk CSV Prediction",
+      "Cloud Deployed on Render"
+    ],
+    visualType: "regression",
+    githubUrl: "https://github.com/2006181/California_House_Price_Prediction",
+    liveDemoUrl: "https://californiahousepriceprediction-rxripw4nsm3bwntvg8dxgm.streamlit.app/",
+    apiDocsUrl: "https://california-house-price-prediction-1-uwu5.onrender.com/docs"
+  },
+  {
+    id: "emotion-detection-nlp",
+    number: "02",
     title: "Emotion Detection using NLP",
     category: "Natural Language Processing / Classification",
     description: "An end-to-end NLP web application that detects emotions from text input using text preprocessing, Bag of Words feature representation, and Machine Learning classification.",
@@ -26,7 +61,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "student-score-prediction",
-    number: "02",
+    number: "03",
     title: "Student Score Prediction App",
     category: "Machine Learning / Regression",
     description: "An end-to-end Machine Learning web application that predicts student exam scores based on study hours and historical academic performance metrics.",
@@ -49,7 +84,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "student-success-predictor",
-    number: "03",
+    number: "04",
     title: "Student Success Predictor",
     category: "Machine Learning / Classification",
     description: "A binary classification system built to predict student pass/fail outcomes by analyzing attendance trends, weekly study duration, and continuous internal assessment scores.",
@@ -69,27 +104,5 @@ export const projectsData: Project[] = [
     visualType: "classification",
     githubUrl: "https://github.com/2006181/Student-success-predictor",
     liveDemoUrl: "https://student-success-predictor-hb99fnp7no7ksmacuxappgw.streamlit.app/"
-  },
-  {
-    id: "diwali-sales-analysis",
-    number: "04",
-    title: "Diwali Sales Analysis",
-    category: "Data Science / Exploratory Data Analysis",
-    description: "Comprehensive exploratory data analysis on festive retail transactions to uncover high-value customer demographics, top revenue-driving product categories, and geographical distribution.",
-    problem: "Retail decision-makers need empirical data visualizations to optimize seasonal inventory management, regional promotions, and targeted promotional campaigns.",
-    approach: "Conducted deep data wrangling with Pandas, removing redundant data, handling null values, calculating aggregate purchasing power across age/gender cohorts, and visualizing patterns via Seaborn/Matplotlib.",
-    technologies: ["Python", "Pandas", "Matplotlib", "Seaborn", "NumPy"],
-    mlAlgorithm: "Exploratory Data Analysis & Statistical Aggregation",
-    evaluationMetrics: ["Demographic Cohort Analysis", "Regional Revenue Breakdown", "Product Category Heatmaps"],
-    keyLearning: "Developed strong data storytelling capabilities: articulating complex statistical correlations through visual heatmaps, distribution plots, and actionable retail insights.",
-    highlights: [
-      "In-depth Exploratory Data Analysis",
-      "Customer Demographic Segmentation",
-      "Product Category Breakdown",
-      "Regional Performance Mapping",
-      "Correlation Heatmaps & Distribution Charts"
-    ],
-    visualType: "eda",
-    githubUrl: "https://github.com/2006181"
   }
 ];

@@ -94,7 +94,15 @@ export const journeySteps: JourneyStep[] = [
     stage: "STAGE 12",
     topic: "FastAPI & Backend Integration",
     focus: "Building asynchronous REST APIs, request validation with Pydantic, routing, and backend model integration.",
-    status: "exploring",
-    details: "Currently exploring FastAPI to build robust APIs and integrate trained AI/ML models into real-world applications."
+    status: "completed",
+    details: "Completed FastAPI backend foundations, building asynchronous REST API endpoints with Pydantic validation and integrating trained ML models for deployment."
+  },
+  {
+    step: 13,
+    stage: "STAGE 13",
+    topic: "Generative AI",
+    focus: "Large Language Models (LLMs), Prompt Engineering, LangChain, RAG architectures, and AI agent frameworks.",
+    status: "in-progress",
+    details: "Currently learning Generative AI and LLMs, exploring prompt engineering, vector embeddings, RAG pipelines, and agentic workflows."
   }
 ];

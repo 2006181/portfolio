@@ -191,6 +191,19 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onC
                   </span>
                 )}
 
+                {project.apiDocsUrl && (
+                  <a
+                    href={project.apiDocsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => soundFx.playClick()}
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyber-purple/15 hover:bg-cyber-purple/25 border border-cyber-purple/40 hover:border-cyber-purple text-purple-300 font-mono text-xs font-medium transition-all shadow-[0_0_15px_rgba(168,85,247,0.2)]"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    API Docs
+                  </a>
+                )}
+
                 {project.liveDemoUrl ? (
                   <a
                     href={project.liveDemoUrl}

@@ -56,12 +56,13 @@ export const App: React.FC = () => {
         {/* 7. Cyberpunk Marquee Strip 2 */}
         <CyberMarquee
           items={[
+            "CALIFORNIA HOUSE PRICE PREDICTION",
+            "RANDOM FOREST REGRESSION",
             "STUDENT SCORE PREDICTION",
             "LINEAR REGRESSION",
             "STUDENT SUCCESS PREDICTOR",
             "LOGISTIC REGRESSION",
-            "DIWALI SALES ANALYSIS",
-            "EXPLORATORY DATA ANALYSIS",
+            "FASTAPI BACKEND",
             "STREAMLIT DASHBOARD",
             "MODEL EVALUATION"
           ]}

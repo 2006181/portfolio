@@ -25,7 +25,7 @@ export const Journey: React.FC = () => {
         {/* Journey Grid */}
         <div className="relative border-l-2 border-slate-800 ml-4 sm:ml-8 pl-6 sm:pl-10 space-y-8">
           {journeySteps.map((step, idx) => {
-            const isExploring = step.status === 'exploring';
+            const isCurrent = step.status === 'in-progress' || step.status === 'exploring';
             return (
               <motion.div
                 key={step.step}
@@ -38,7 +38,7 @@ export const Journey: React.FC = () => {
                 {/* Timeline Dot */}
                 <div
                   className={`absolute -left-[31px] sm:-left-[47px] top-1.5 w-4 h-4 rounded-full border-2 transition-all ${
-                    isExploring
+                    isCurrent
                       ? 'bg-cyber-dark border-cyber-pink shadow-[0_0_12px_#ff007f] animate-ping'
                       : 'bg-cyber-dark border-cyber-cyan shadow-[0_0_10px_#00f0ff]'
                   }`}
@@ -46,7 +46,7 @@ export const Journey: React.FC = () => {
 
                 {/* Content Card */}
                 <div className={`p-5 rounded-xl border backdrop-blur-md transition-all duration-200 ${
-                  isExploring
+                  isCurrent
                     ? 'bg-cyber-pink/5 border-cyber-pink/40 shadow-[0_0_20px_rgba(255,0,127,0.15)]'
                     : 'bg-cyber-dark/80 border-slate-800/80 hover:border-cyber-cyan/40'
                 }`}>
@@ -60,9 +60,9 @@ export const Journey: React.FC = () => {
                       </h4>
                     </div>
 
-                    {isExploring ? (
+                    {isCurrent ? (
                       <CyberBadge variant="pink" size="sm" icon={<Sparkles className="w-3 h-3 animate-spin" />}>
-                        CURRENT EXPLORATION
+                        CURRENTLY LEARNING / IN PROGRESS
                       </CyberBadge>
                     ) : (
                       <CyberBadge variant="emerald" size="sm" icon={<CheckCircle2 className="w-3 h-3" />}>

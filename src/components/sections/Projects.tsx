@@ -148,6 +148,21 @@ export const Projects: React.FC = () => {
                     </a>
                   )}
 
+                  {/* API Documentation Link */}
+                  {project.apiDocsUrl && (
+                    <a
+                      href={project.apiDocsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => soundFx.playClick()}
+                      title="API Documentation (FastAPI Docs)"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyber-purple/15 hover:bg-cyber-purple/25 border border-cyber-purple/40 hover:border-cyber-purple text-purple-300 font-mono text-xs font-bold transition-all shadow-[0_0_12px_rgba(168,85,247,0.2)]"
+                    >
+                      <span>API DOCS</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  )}
+
                   {/* GitHub Repo Link */}
                   {project.githubUrl && (
                     <a

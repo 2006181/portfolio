@@ -11,13 +11,12 @@ export const achievementsData: AchievementItem[] = [
     badge: "IIT GUWAHATI"
   },
   {
-    id: "prayaas-electoral-club",
-    role: "Core Member",
-    organization: "Prayaas Electoral Literacy Club — ABESIT",
-    duration: "September 2025 — Present",
-    type: "Community",
-    description: "Actively organizing awareness campaigns, democratic literacy workshops, and interactive civic engagement sessions for university students.",
-    badge: "ABESIT CLUB"
+    id: "codex-ctf-treasurer",
+    role: "Treasurer",
+    organization: "CodeX Capture The Flag",
+    type: "Leadership",
+    description: "Serving as Treasurer of CodeX Capture The Flag, a coding and presentation club, contributing to financial management, club operations, event planning, and the growth of the technical community.",
+    badge: "CODEX CTF"
   },
   {
     id: "hackathon-code-veda",

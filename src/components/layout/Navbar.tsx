@@ -95,7 +95,7 @@ export const Navbar: React.FC = () => {
             {/* Futuristic Status Pill (Hidden on small mobile) */}
             <div className="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-cyber-dark/80 border border-emerald-500/30 text-emerald-400 font-mono text-[11px]">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#10b981]" />
-              <span className="truncate max-w-[220px]">{profileData.status}</span>
+              <span className="truncate max-w-[280px]">{profileData.status}</span>
             </div>
           </div>
 

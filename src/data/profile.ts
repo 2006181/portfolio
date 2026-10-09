@@ -4,9 +4,9 @@ export const profileData = {
   degree: "B.Tech CSE (AI)",
   institution: "ABESIT, Ghaziabad",
   location: "Ghaziabad, India",
-  status: "AI/ML • Building • Exploring • FastAPI",
+  status: "AI/ML • Building • Exploring • Generative AI",
   systemStatus: "ACTIVE // ML_PIPELINE_READY",
-  summary: "Rahul is a B.Tech CSE (AI) student and AI/ML Developer focused on Machine Learning, Deep Learning, Computer Vision, NLP, and practical AI applications. Currently exploring FastAPI to build APIs and integrate AI/ML models into real-world applications.",
+  summary: "I'm Rahul, a B.Tech CSE (AI) student and AI/ML Developer passionate about building intelligent applications. My journey spans Machine Learning, Deep Learning, Computer Vision, NLP, and API development. Currently, I'm diving deeper into Generative AI and exploring new possibilities with AI.",
   about: {
     heading: "Building with Data. Learning with AI.",
     paragraphs: [

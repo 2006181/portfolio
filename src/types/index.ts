@@ -28,6 +28,7 @@ export interface Project {
   visualType: 'regression' | 'classification' | 'eda';
   githubUrl?: string;
   liveDemoUrl?: string;
+  apiDocsUrl?: string;
 }
 
 export interface ExperienceItem {
