@@ -169,7 +169,7 @@ export function ResumeSheet() {
             {additionalProjects.map((p) => (
               <div key={p.id}>
                 <div className="flex flex-wrap justify-between gap-x-3">
-                  <a href={p.github} target="_blank" rel="noreferrer" className="text-xs font-semibold text-bone hover:underline">
+                  <a href={p.demo || p.github} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-bone hover:underline">
                     {p.title} ↗
                   </a>
                   <span className="text-[10px] text-smoke">{p.tag}</span>

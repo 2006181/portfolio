@@ -263,6 +263,7 @@ export const additionalProjects: AdditionalProject[] = [
     description: 'Conversational assistant answering city queries, checking real-time weather via OpenWeatherMap, and discovering local news using Tavily Search and Google Gemini.',
     stack: ['Python', 'Streamlit', 'Google Gemini', 'LangChain', 'Tavily', 'OpenWeatherMap'],
     github: 'https://github.com/2006181/-City-AI-Assistant',
+    demo: 'https://g7f9znyt4t9umphhhcgaor.streamlit.app/',
     tag: 'GenAI / Agent',
   },
   {
@@ -271,6 +272,7 @@ export const additionalProjects: AdditionalProject[] = [
     description: 'Local Retrieval-Augmented Generation system allowing users to upload PDF books, index text with Hugging Face embeddings in Chroma, and generate answers via Groq API.',
     stack: ['Python', 'Streamlit', 'Hugging Face', 'ChromaDB', 'Groq', 'RAG'],
     github: 'https://github.com/2006181/Book-Q-A-RAG-App',
+    demo: 'https://book-q-a-rag-app-yfbrelypj22kgil6tytomd.streamlit.app/',
     tag: 'RAG / Vector DB',
   },
   {
@@ -279,6 +281,7 @@ export const additionalProjects: AdditionalProject[] = [
     description: 'AI-powered structured document extraction pipeline leveraging Google Gemini, LangChain, and Pydantic schema validation within an interactive Streamlit UI.',
     stack: ['Python', 'Google Gemini', 'LangChain', 'Pydantic', 'Streamlit'],
     github: 'https://github.com/2006181/AI-Information-Extractor',
+    demo: 'https://ai-information-extractor-igvwrqtxabrf5bxifsd5rm.streamlit.app/',
     tag: 'LLM Extraction',
   },
   {
@@ -287,6 +290,7 @@ export const additionalProjects: AdditionalProject[] = [
     description: 'Interactive emotion-adaptive conversational AI chatbot built with Streamlit, Google Gemini, and LangChain that dynamically adjusts tone to user mood.',
     stack: ['Python', 'Streamlit', 'Google Gemini', 'LangChain'],
     github: 'https://github.com/2006181/Mood-Based-AI-Chatbot',
+    demo: 'https://mood-based-ai-chatbot-le5jfcmofbxpxjbunrk3re.streamlit.app/',
     tag: 'Conversational AI',
   },
   {
@@ -319,6 +323,7 @@ export const additionalProjects: AdditionalProject[] = [
     description: 'Machine Learning application predicting student academic performance using Linear Regression with Scikit-learn, with residual evaluation metrics.',
     stack: ['Python', 'Scikit-Learn', 'Linear Regression', 'Machine Learning'],
     github: 'https://github.com/2006181/student-score-prediction-app',
+    demo: 'https://student-score-prediction-app-1.onrender.com/',
     tag: 'Machine Learning',
   },
   {

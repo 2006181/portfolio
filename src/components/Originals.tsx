@@ -178,7 +178,7 @@ function MoreProjectsSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     data-cursor="link"
-                    className="flex min-h-10 items-center gap-1.5 rounded-md bg-crimson px-3.5 text-xs font-bold text-white transition hover:bg-crimson-2"
+                    className="flex min-h-10 items-center gap-1.5 rounded-md bg-crimson px-3.5 text-xs font-bold text-white shadow-md transition hover:bg-crimson-2"
                   >
                     ▶ Live Demo
                   </a>
