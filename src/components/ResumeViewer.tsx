@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { achievements, certifications, education, experience, profile, projects, skillCategories } from '../data/portfolio';
+import { achievements, additionalProjects, certifications, education, experience, profile, projects, skillCategories } from '../data/portfolio';
 import { EASE, Magnetic, SectionHeading } from './fx';
 
 /** THE FULL STORY — a designed resume preview plus view / download actions. */
@@ -48,9 +48,9 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
           </div>
           <dl className="mt-8 grid grid-cols-3 gap-px overflow-hidden rounded-xl bg-white/10 text-center">
             {[
-              { v: '5', k: 'Projects' },
+              { v: String(projects.length + additionalProjects.length), k: 'Projects' },
               { v: '1', k: 'Internship' },
-              { v: '1', k: 'Hackathon' },
+              { v: '3', k: 'Hackathons' },
             ].map((s) => (
               <div key={s.k} className="bg-ink-2 px-2 py-4">
                 <dd className="font-display text-3xl leading-none text-bone">{s.v}</dd>
@@ -151,15 +151,33 @@ export function ResumeSheet() {
           ))}
 
           <H>Projects</H>
+          <div className="mb-2 text-[10px] font-bold uppercase tracking-wider text-crimson-2">Featured Projects</div>
           {projects.map((p) => (
             <div key={p.id} className="mb-3">
               <div className="flex flex-wrap justify-between gap-x-3">
-                <p className="text-sm font-semibold text-bone">{p.title}</p>
+                <a href={p.demo || p.github} target="_blank" rel="noreferrer" className="text-sm font-semibold text-bone hover:underline">
+                  {p.title} ↗
+                </a>
                 <p className="text-xs text-smoke">{p.year}</p>
               </div>
               <p className="text-xs text-mist">{p.stack.join(', ')}</p>
             </div>
           ))}
+
+          <div className="mb-2 mt-4 text-[10px] font-bold uppercase tracking-wider text-crimson-2">More Open-Source Projects</div>
+          <div className="space-y-2.5">
+            {additionalProjects.map((p) => (
+              <div key={p.id}>
+                <div className="flex flex-wrap justify-between gap-x-3">
+                  <a href={p.github} target="_blank" rel="noreferrer" className="text-xs font-semibold text-bone hover:underline">
+                    {p.title} ↗
+                  </a>
+                  <span className="text-[10px] text-smoke">{p.tag}</span>
+                </div>
+                <p className="text-[11px] text-mist">{p.stack.join(', ')}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div>

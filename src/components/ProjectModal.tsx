@@ -67,7 +67,7 @@ export default function ProjectModal({ project, onClose, onSwitch }: { project: 
             </button>
             <div className="absolute inset-x-0 bottom-0 px-5 pb-6 sm:px-10">
               <motion.p className="mb-2 flex items-center gap-2 text-[11px] font-bold tracking-[0.34em] text-bone/80" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
-                <span className="font-display text-xl tracking-normal text-crimson-2">{profile.firstName[0]}</span> ORIGINAL
+                <span className="font-display text-xl tracking-normal text-crimson-2">{profile.firstName[0]}</span> FEATURED ORIGINAL
               </motion.p>
               <motion.h2
                 id={`title-${project.id}-modal`}
@@ -91,21 +91,34 @@ export default function ProjectModal({ project, onClose, onSwitch }: { project: 
               {project.logline}
             </motion.p>
 
-            {project.github && (
-              <motion.div variants={block} className="mt-6 flex flex-wrap gap-3">
+            <motion.div variants={block} className="mt-6 flex flex-wrap gap-3">
+              {project.demo && (
+                <Magnetic>
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-cursor="link"
+                    className="flex min-h-12 items-center gap-2 rounded-md bg-crimson px-6 text-[15px] font-bold text-white transition hover:bg-crimson-2"
+                  >
+                    ▶ Live Demo
+                  </a>
+                </Magnetic>
+              )}
+              {project.github && (
                 <Magnetic>
                   <a
                     href={project.github}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     data-cursor="link"
                     className="flex min-h-12 items-center gap-2 rounded-md bg-bone px-6 text-[15px] font-bold text-ink transition hover:bg-white"
                   >
                     GitHub ↗
                   </a>
                 </Magnetic>
-              </motion.div>
-            )}
+              )}
+            </motion.div>
 
             {/* impact */}
             <motion.section variants={block} className="mt-12">

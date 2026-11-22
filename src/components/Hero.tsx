@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from 'framer-motion';
-import { achievements, certifications, profile, projects, type ProfileId } from '../data/portfolio';
+import { achievements, additionalProjects, certifications, profile, projects, type ProfileId } from '../data/portfolio';
 import { useFinePointer } from '../hooks/useMedia';
 import { useSmoothScroll } from '../hooks/smoothScroll';
 import { EASE, Magnetic, Particles } from './fx';
@@ -39,7 +39,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
   const meta = [
     '2024 – 2028',
     'B.Tech CSE (AI)',
-    `${projects.length} Originals`,
+    `${projects.length + additionalProjects.length} Projects`,
     `${certifications.length} Credentials`,
   ];
 

@@ -15,7 +15,7 @@ export const profile = {
   role: 'AI/ML Engineer',
   tagline: ['AI/ML Engineer', 'Generative AI Developer', 'Agentic AI Developer', 'Data Science Enthusiast'],
   intro:
-    'Third-year B.Tech CSE (AI) student and AI/ML developer who ships end-to-end systems: classical ML, deep learning, computer vision, NLP, RAG-based LLM applications and multi-agent workflows, deployed with FastAPI and Streamlit. Completed an IBM SkillBuild AI internship and competed in Smart India Hackathon. Fresher seeking entry-level and internship roles in AI/ML, Data Science, Generative AI and Agentic AI.',
+    'Third-year B.Tech CSE (AI) student and AI/ML developer who ships end-to-end systems: classical ML, deep learning, computer vision, NLP, RAG-based LLM applications and multi-agent workflows, deployed with FastAPI and Streamlit. Completed an IBM SkillBuild AI internship and participated in multiple hackathons including Smart India Hackathon, Code Veda 2.0 and Ignition Hack 2.0. Fresher seeking entry-level and internship roles in AI/ML, Data Science, Generative AI and Agentic AI.',
   location: 'Ghaziabad, Uttar Pradesh, India',
   email: 'jaiguruji292001@gmail.com',
   phone: '+91-9205006815',
@@ -54,6 +54,15 @@ export const experience = [
     ],
   },
   {
+    company: 'CodeX Capture The Flag (ABESIT, Ghaziabad)',
+    role: 'Core Member',
+    place: 'Ghaziabad, India',
+    period: 'TODO: Add dates',
+    points: [
+      "Core member of the college's coding and presentation club, CodeX Capture The Flag.",
+    ],
+  },
+  {
     company: "UDGAM'26, IIT Guwahati",
     role: 'Campus Ambassador',
     place: 'Ghaziabad, India',
@@ -85,8 +94,8 @@ export type Project = {
   build: string[];
   features: string[];
   metrics: Metric[];
-  /** Omit when the repository isn't public — the GitHub button is hidden instead of linking to a 404. */
   github?: string;
+  demo?: string;
   palette: Palette;
   motif: 'shield' | 'flow' | 'tenants';
 };
@@ -116,8 +125,8 @@ export const projects: Project[] = [
       { value: 'RAG', label: 'conversational transcript retrieval' },
       { value: 'LCEL', label: 'declarative chain orchestration' },
     ],
-    // TODO: exact repo URL
-    github: 'https://github.com/2006181',
+    demo: 'https://jgntxpz4eb3pclpjs2d7su.streamlit.app/',
+    github: 'https://github.com/2006181/-AI-Video-Assistant-With-RAG',
     palette: { from: '#2a0610', via: '#7a0f24', to: '#0b0710', accent: '#ff3d5a' },
     motif: 'shield',
   },
@@ -145,8 +154,8 @@ export const projects: Project[] = [
       { value: 'Tavily', label: 'live web research & synthesis' },
       { value: 'End-to-End', label: 'autonomous report compilation' },
     ],
-    // TODO: exact repo URL
-    github: 'https://github.com/2006181',
+    demo: 'https://multi-agent-ai-research-system-with-langchain-ql8dqsdvwjlxnvmd.streamlit.app/',
+    github: 'https://github.com/2006181/Multi-Agent-AI-Research-System-with-LangChain',
     palette: { from: '#04121f', via: '#0f4c6e', to: '#05080d', accent: '#4cc9ff' },
     motif: 'flow',
   },
@@ -174,8 +183,8 @@ export const projects: Project[] = [
       { value: 'Groq', label: 'instant query response times' },
       { value: 'College Docs', label: 'grounded institutional knowledge' },
     ],
-    // TODO: exact repo URL
-    github: 'https://github.com/2006181',
+    demo: 'https://t9khn87fzvxofhyhdwvgkv.streamlit.app/',
+    github: 'https://github.com/2006181/ABESIT-College-Assistant-AI-powered-chatbot-using-LangGraph-and-RAG',
     palette: { from: '#120822', via: '#3d1a6e', to: '#07060c', accent: '#b98bff' },
     motif: 'tenants',
   },
@@ -202,14 +211,14 @@ export const projects: Project[] = [
       { value: 'AI Agents', label: 'autonomous task completion' },
       { value: 'Streamlit', label: 'responsive control interface' },
     ],
-    // TODO: exact repo URL
-    github: 'https://github.com/2006181',
+    demo: 'https://q3xt3ntzfgofyjwupgvads.streamlit.app/',
+    github: 'https://github.com/2006181/-Your_Personal_Assistant_using_n8n',
     palette: { from: '#1a0d02', via: '#8a4a07', to: '#0a0806', accent: '#ffb547' },
     motif: 'flow',
   },
   {
     id: 'california-housing-api',
-    title: 'California Housing Price API',
+    title: 'California House Price Prediction API',
     year: '2026',
     genre: 'ML • FastAPI • MySQL',
     logline: 'End-to-end machine learning pipeline from raw housing data to a production-ready FastAPI prediction service.',
@@ -230,10 +239,119 @@ export const projects: Project[] = [
       { value: 'MySQL', label: 'persistent query logging & storage' },
       { value: 'End-to-End', label: 'from raw data to served endpoint' },
     ],
-    // TODO: exact repo URL
-    github: 'https://github.com/2006181',
+    demo: 'https://californiahousepriceprediction-rxripw4nsm3bwntvg8dxgm.streamlit.app/',
+    github: 'https://github.com/2006181/California_House_Price_Prediction',
     palette: { from: '#03150f', via: '#0d5a40', to: '#050a08', accent: '#46e3a8' },
     motif: 'shield',
+  },
+];
+
+export type AdditionalProject = {
+  id: string;
+  title: string;
+  description: string;
+  stack: string[];
+  github: string;
+  demo?: string;
+  tag?: string;
+};
+
+export const additionalProjects: AdditionalProject[] = [
+  {
+    id: 'city-ai-assistant',
+    title: 'City AI Assistant',
+    description: 'Conversational assistant answering city queries, checking real-time weather via OpenWeatherMap, and discovering local news using Tavily Search and Google Gemini.',
+    stack: ['Python', 'Streamlit', 'Google Gemini', 'LangChain', 'Tavily', 'OpenWeatherMap'],
+    github: 'https://github.com/2006181/-City-AI-Assistant',
+    tag: 'GenAI / Agent',
+  },
+  {
+    id: 'book-qa-rag-app',
+    title: 'Book Q&A RAG App',
+    description: 'Local Retrieval-Augmented Generation system allowing users to upload PDF books, index text with Hugging Face embeddings in Chroma, and generate answers via Groq API.',
+    stack: ['Python', 'Streamlit', 'Hugging Face', 'ChromaDB', 'Groq', 'RAG'],
+    github: 'https://github.com/2006181/Book-Q-A-RAG-App',
+    tag: 'RAG / Vector DB',
+  },
+  {
+    id: 'ai-information-extractor',
+    title: 'AI Information Extractor',
+    description: 'AI-powered structured document extraction pipeline leveraging Google Gemini, LangChain, and Pydantic schema validation within an interactive Streamlit UI.',
+    stack: ['Python', 'Google Gemini', 'LangChain', 'Pydantic', 'Streamlit'],
+    github: 'https://github.com/2006181/AI-Information-Extractor',
+    tag: 'LLM Extraction',
+  },
+  {
+    id: 'mood-based-ai-chatbot',
+    title: 'Mood-Based AI Chatbot',
+    description: 'Interactive emotion-adaptive conversational AI chatbot built with Streamlit, Google Gemini, and LangChain that dynamically adjusts tone to user mood.',
+    stack: ['Python', 'Streamlit', 'Google Gemini', 'LangChain'],
+    github: 'https://github.com/2006181/Mood-Based-AI-Chatbot',
+    tag: 'Conversational AI',
+  },
+  {
+    id: 'smart-face-detection-opencv',
+    title: 'Smart Face Detection using OpenCV',
+    description: 'Real-time computer vision system using OpenCV Haar Cascade Classifiers to detect faces, eyes, and smiles simultaneously through webcam video streams.',
+    stack: ['Python', 'OpenCV', 'Haar Cascades', 'Computer Vision'],
+    github: 'https://github.com/2006181/-Smart-Face-Detection-using-OpenCV',
+    tag: 'Computer Vision',
+  },
+  {
+    id: 'mnist-digit-classifier',
+    title: 'MNIST Handwritten Digit Classifier',
+    description: 'Deep Learning neural network built with PyTorch on the MNIST dataset, covering complete training, cross-entropy evaluation, and model checkpointing.',
+    stack: ['PyTorch', 'Deep Learning', 'Neural Networks', 'Python'],
+    github: 'https://github.com/2006181/mnist-digit-classifier',
+    tag: 'Deep Learning',
+  },
+  {
+    id: 'pytorch-qa-system',
+    title: 'PyTorch Question Answering System',
+    description: 'Deep Learning-based Question Answering System constructed from scratch using PyTorch and trained on a custom Question-Answer dataset.',
+    stack: ['PyTorch', 'Deep Learning', 'NLP', 'Python'],
+    github: 'https://github.com/2006181/-Simple-Question-Answering-System-using-PyTorch',
+    tag: 'Deep Learning / NLP',
+  },
+  {
+    id: 'student-score-prediction',
+    title: 'Student Score Prediction ML App',
+    description: 'Machine Learning application predicting student academic performance using Linear Regression with Scikit-learn, with residual evaluation metrics.',
+    stack: ['Python', 'Scikit-Learn', 'Linear Regression', 'Machine Learning'],
+    github: 'https://github.com/2006181/student-score-prediction-app',
+    tag: 'Machine Learning',
+  },
+  {
+    id: 'fashion-image-classifier',
+    title: 'Fashion Image Classifier using CNN',
+    description: 'Convolutional Neural Network built with PyTorch for classifying multi-class fashion apparel imagery with feature map visualization.',
+    stack: ['Python', 'PyTorch', 'CNNs', 'Computer Vision'],
+    github: 'https://github.com/2006181/Fashion-Image-Classifier-using-CNN-and-PyTorch',
+    tag: 'Deep Learning',
+  },
+  {
+    id: 'emotions-detection-nlp',
+    title: 'Emotions Detection using NLP',
+    description: 'Natural Language Processing pipeline classifying textual statements into nuanced emotional categories using tokenization and statistical NLP models.',
+    stack: ['Python', 'NLP', 'Text Classification', 'Scikit-Learn'],
+    github: 'https://github.com/2006181/Emotions-detection-using-NLP-',
+    tag: 'NLP',
+  },
+  {
+    id: 'diwali-sales-analysis',
+    title: 'Diwali Sales Data Analysis',
+    description: 'Exploratory Data Analysis project uncovering consumer purchasing trends, demographic breakdowns, and sales drivers using Pandas, Matplotlib, and Seaborn.',
+    stack: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'EDA'],
+    github: 'https://github.com/2006181/Python_Diwali_Sales_Analysis',
+    tag: 'Data Analysis',
+  },
+  {
+    id: 'finance-tracker-cli',
+    title: 'CLI Finance Expense Tracker',
+    description: 'Command-line personal finance and expense tracking tool built in Python for categorized logging, balance tracking, and budget summaries.',
+    stack: ['Python', 'CLI', 'Data Management'],
+    github: 'https://github.com/2006181/Finance-Tracker-app-mini-project-',
+    tag: 'CLI Utility',
   },
 ];
 
@@ -253,6 +371,20 @@ export const achievements: Achievement[] = [
     org: 'Smart India Hackathon',
     detail: 'Competed in Smart India Hackathon, building under real constraints and high pressure in an agile multidisciplinary team.',
     laurel: 'National Hackathon',
+  },
+  {
+    id: 'code-veda',
+    title: 'Code Veda 2.0',
+    org: 'Hackathon Participation',
+    detail: 'Participated in Code Veda 2.0 hackathon, collaborating in a team to build innovative technical solutions under real constraints.',
+    laurel: 'Hackathon',
+  },
+  {
+    id: 'ignition-hack',
+    title: 'Ignition Hack 2.0',
+    org: 'Hackathon Participation',
+    detail: 'Participated in Ignition Hack 2.0 hackathon, ideating and prototyping technical applications.',
+    laurel: 'Hackathon',
   },
   {
     id: 'tata-genai',
@@ -407,17 +539,13 @@ export const skillCategories: SkillCategory[] = [
   },
 ];
 
-/**
- * Factual cross-references shown when a skill card is hovered/tapped:
- * where the skill appears in the projects, certifications or achievements on the resume.
- */
 export const skillEvidence: Record<string, string[]> = {
   Python: ['AI Video Assistant with RAG', 'Multi-Agent AI Research System', 'Cisco Python Essentials 1'],
   MySQL: ['California House Price Prediction API'],
   DSA: ['CodeChef Data Structures', 'Algorithmic problem solving'],
-  'Scikit-Learn': ['California House Price Prediction API', 'ML model pipelines'],
+  'Scikit-Learn': ['California House Price Prediction API', 'Student Score Prediction'],
   'Random Forest': ['California House Price Prediction API'],
-  'Linear Regression': ['Statistical Modeling & Evaluation'],
+  'Linear Regression': ['Student Score Prediction ML App'],
   'Logistic Regression': ['Classification & Modeling'],
   'Decision Trees': ['California House Price Prediction API'],
   KNN: ['Pattern classification benchmarks'],
@@ -425,49 +553,49 @@ export const skillEvidence: Record<string, string[]> = {
   'K-Means Clustering': ['Unsupervised customer segmentation'],
   'Feature Engineering': ['California House Price Prediction API'],
   'Model Evaluation': ['Cross-validation & performance metrics'],
-  PyTorch: ['Deep Learning and Neural Network models'],
-  CNNs: ['Computer Vision architecture'],
-  OpenCV: ['Computer Vision & frame preprocessing'],
-  'Haar Cascades': ['Real-time face & object detection'],
+  PyTorch: ['MNIST Digit Classifier', 'Fashion Image Classifier', 'PyTorch QA System'],
+  CNNs: ['Fashion Image Classifier using CNN and PyTorch'],
+  OpenCV: ['Smart Face Detection using OpenCV'],
+  'Haar Cascades': ['Smart Face Detection using OpenCV'],
   Whisper: ['AI Video Assistant with RAG'],
-  'Text Classification': ['NLP pipelines & sentiment analysis'],
-  'Emotion Detection': ['Computer Vision & audio sentiment models'],
-  LLMs: ['Multi-Agent AI Research System', 'AI Video Assistant with RAG'],
+  'Text Classification': ['Emotions Detection using NLP'],
+  'Emotion Detection': ['Emotions Detection using NLP', 'Mood-Based AI Chatbot'],
+  LLMs: ['Multi-Agent AI Research System', 'AI Video Assistant with RAG', 'City AI Assistant'],
   'Prompt Engineering': ['Structured JSON extraction & agent prompts'],
-  RAG: ['AI Video Assistant with RAG', 'ABESIT College Assistant'],
+  RAG: ['AI Video Assistant with RAG', 'ABESIT College Assistant', 'Book Q&A RAG App'],
   Embeddings: ['FAISS similarity search', 'ChromaDB embeddings'],
-  'HF Embeddings': ['AI Video Assistant with RAG', 'ABESIT College Assistant'],
-  ChromaDB: ['AI Video Assistant with RAG'],
+  'HF Embeddings': ['AI Video Assistant with RAG', 'ABESIT College Assistant', 'Book Q&A RAG App'],
+  ChromaDB: ['AI Video Assistant with RAG', 'Book Q&A RAG App'],
   FAISS: ['ABESIT College Assistant'],
-  Groq: ['Multi-Agent AI Research System', 'ABESIT College Assistant'],
+  Groq: ['Multi-Agent AI Research System', 'ABESIT College Assistant', 'Book Q&A RAG App'],
   'Mistral AI': ['AI Video Assistant with RAG'],
-  Pydantic: ['FastAPI data validation & LLM schemas'],
-  'AI Agents': ['Multi-Agent AI Research System', 'Personal AI Assistant (n8n)'],
+  Pydantic: ['FastAPI data validation', 'AI Information Extractor'],
+  'AI Agents': ['Multi-Agent AI Research System', 'Personal AI Assistant (n8n)', 'City AI Assistant'],
   'Agentic Workflows': ['Multi-Agent AI Research System', 'LangGraph'],
-  LangChain: ['AI Video Assistant with RAG', 'Multi-Agent AI Research System'],
+  LangChain: ['AI Video Assistant with RAG', 'Multi-Agent AI Research System', 'City AI Assistant'],
   LangGraph: ['Multi-Agent AI Research System', 'ABESIT College Assistant'],
-  'Tool Calling': ['Multi-Agent AI Research System (Tavily, BeautifulSoup)'],
-  'API Integration': ['FastAPI endpoints', 'Groq & Mistral APIs'],
+  'Tool Calling': ['Multi-Agent AI Research System (Tavily, BeautifulSoup)', 'City AI Assistant'],
+  'API Integration': ['FastAPI endpoints', 'Groq & Mistral APIs', 'OpenWeatherMap'],
   'Human-in-the-Loop': ['LangGraph conditional interrupts'],
   'Agent Orchestration': ['Multi-Agent AI Research System'],
   'Agent Debugging': ['LangGraph execution tracing'],
   'n8n Automation': ['Personal AI Assistant (n8n)'],
-  NumPy: ['Mathematical array operations & data wrangling'],
-  Pandas: ['Data cleaning, analysis & feature engineering'],
-  Matplotlib: ['Exploratory data visualization'],
-  Seaborn: ['Statistical distribution plots'],
-  EDA: ['Exploratory data analysis across ML projects'],
-  'Data Visualization': ['Tata GenAI Data Analytics simulation'],
+  NumPy: ['Diwali Sales Data Analysis', 'Mathematical array operations'],
+  Pandas: ['Diwali Sales Data Analysis', 'Data cleaning & analysis'],
+  Matplotlib: ['Diwali Sales Data Analysis', 'Exploratory visualization'],
+  Seaborn: ['Diwali Sales Data Analysis', 'Distribution plots'],
+  EDA: ['Diwali Sales Data Analysis across sales datasets'],
+  'Data Visualization': ['Tata GenAI Data Analytics simulation', 'Diwali Sales Analysis'],
   FastAPI: ['California House Price Prediction API'],
   Streamlit: ['AI Video Assistant with RAG', 'Multi-Agent AI Research System', 'ABESIT College Assistant'],
   Docker: ['Microservice containerization & deployment'],
   'REST APIs': ['California House Price Prediction API', 'FastAPI'],
   Webhooks: ['Personal AI Assistant (n8n)'],
-  'Git & GitHub': ['Version control & open-source collaboration'],
+  'Git & GitHub': ['Version control across 30+ repositories'],
   Vercel: ['Portfolio & frontend deployment'],
   FFmpeg: ['AI Video Assistant with RAG'],
   'yt-dlp': ['AI Video Assistant with RAG'],
-  Tavily: ['Multi-Agent AI Research System'],
+  Tavily: ['Multi-Agent AI Research System', 'City AI Assistant'],
 };
 
 export type Episode = {
@@ -519,9 +647,9 @@ export const seasons: Season[] = [
       {
         code: 'S01 E03',
         title: 'The Hackathon Arena',
-        description: 'Competed in Smart India Hackathon, building under intense real-world constraints in a multidisciplinary team.',
-        tags: ['SIH', 'Hackathon', 'Innovation'],
-        runtime: 'National Event',
+        description: 'Participated in multiple hackathons including Smart India Hackathon, Code Veda 2.0 and Ignition Hack 2.0.',
+        tags: ['SIH', 'Code Veda', 'Ignition Hack'],
+        runtime: '3 Hackathons',
         palette: crimson,
       },
     ],
@@ -562,7 +690,7 @@ export const seasons: Season[] = [
     number: 3,
     title: 'Industry & Leadership',
     period: '2025 – 2026',
-    synopsis: 'IBM SkillBuild AI Internship, campus ambassadorship for IIT Guwahati UDGAM, and leadership at Prayaas.',
+    synopsis: 'IBM SkillBuild AI Internship, CodeX Capture The Flag core membership, campus ambassadorship for IIT Guwahati, and Prayaas.',
     episodes: [
       {
         code: 'S03 E01',
@@ -574,18 +702,18 @@ export const seasons: Season[] = [
       },
       {
         code: 'S03 E02',
-        title: 'The Campus Ambassador',
-        description: 'Represented IIT Guwahati’s UDGAM’26 on campus, driving outreach, student engagement and event promotion.',
-        tags: ['IIT Guwahati', 'UDGAM', 'Ambassador'],
-        runtime: 'Nov 2025 – Feb 2026',
-        palette: amber,
+        title: 'CodeX Core Member',
+        description: 'Core member of the coding and presentation club, CodeX Capture The Flag at ABESIT.',
+        tags: ['CodeX', 'CTF', 'Core Member'],
+        runtime: 'ABESIT',
+        palette: violet,
       },
       {
         code: 'S03 E03',
-        title: 'Civic Leadership',
-        description: 'Led outreach and civic awareness activities for 11 months as a Core Member of Prayaas Electoral Literacy Club.',
-        tags: ['Prayaas', 'Leadership', 'Outreach'],
-        runtime: 'Sep 2025 – Jul 2026',
+        title: 'Outreach & Civic Impact',
+        description: 'Campus Ambassador for IIT Guwahati UDGAM’26 and 11-month Core Member of Prayaas Electoral Literacy Club.',
+        tags: ['UDGAM’26', 'Prayaas', 'Leadership'],
+        runtime: 'Leadership',
         palette: jade,
       },
     ],
@@ -636,15 +764,15 @@ export type TopPick = { label: string; title: string; detail: string; palette: P
 
 export const topPicks: TopPick[] = [
   { label: 'Core focus', title: 'Agentic AI', detail: 'LangGraph • Multi-Agent Systems • Tool Calling', palette: crimson },
-  { label: 'The RAG Original', title: 'Video Assistant', detail: 'Whisper • Mistral AI • ChromaDB • LCEL', palette: ocean },
+  { label: 'Featured Demo', title: 'Video Assistant', detail: 'Whisper • Mistral AI • ChromaDB • Live Streamlit App', palette: ocean },
   { label: 'Multi-Agent', title: 'AI Researcher', detail: 'Autonomous web research with LangGraph & Groq', palette: violet },
   { label: 'Campus AI', title: 'ABESIT Bot', detail: 'FAISS • Groq • Document RAG Chatbot', palette: jade },
   { label: 'Industry training', title: 'IBM SkillBuild', detail: 'Artificial Intelligence Intern • Edunet', palette: amber },
-  { label: 'National stage', title: 'Smart India', detail: 'Smart India Hackathon Participant', palette: crimson },
+  { label: 'Hackathons', title: '3 Hackathons', detail: 'Smart India Hackathon • Code Veda 2.0 • Ignition Hack 2.0', palette: crimson },
   { label: 'Campus leadership', title: 'UDGAM’26', detail: 'Campus Ambassador • IIT Guwahati', palette: ocean },
   { label: 'Production ML', title: 'FastAPI + RF', detail: 'California House Price Prediction API', palette: jade },
   { label: 'Automation', title: 'n8n Assistant', detail: 'Autonomous webhooks & AI agents', palette: amber },
-  { label: 'Community', title: 'Prayaas Club', detail: 'Core Member • 11 months outreach', palette: violet },
+  { label: 'Club Role', title: 'CodeX CTF', detail: 'Core Member • Coding & Presentation Club', palette: violet },
 ];
 
 /** Slides for the "▶ Play Intro" cinematic sequence. */
@@ -670,13 +798,13 @@ export const introSlides: IntroSlide[] = [
   },
   {
     kicker: 'Projects',
-    title: '5 Originals',
-    lines: ['AI Video Assistant with RAG — Whisper, Mistral AI, ChromaDB', 'Multi-Agent AI Research System — LangGraph, Groq, Tavily', 'ABESIT College Chatbot · n8n Personal AI · Housing ML API'],
+    title: '5 Featured + More Projects',
+    lines: ['AI Video Assistant with RAG · Multi-Agent Research System', 'ABESIT College Chatbot · n8n Personal AI · Housing ML API', 'Plus 12+ Open-Source Projects on GitHub with Live Streamlit Demos'],
   },
   {
-    kicker: 'Hackathon & Leadership',
-    title: 'Top Moments',
-    lines: ['Smart India Hackathon Participant', 'Campus Ambassador — UDGAM’26, IIT Guwahati', 'Core Member — Prayaas Electoral Literacy Club (11 months)'],
+    kicker: 'Hackathons & Clubs',
+    title: 'Competitions & Roles',
+    lines: ['Participant in Smart India Hackathon, Code Veda 2.0 & Ignition Hack 2.0', 'Core Member — CodeX Capture The Flag & Prayaas Club', 'Campus Ambassador — UDGAM’26, IIT Guwahati'],
   },
   {
     kicker: 'Certifications',
@@ -733,7 +861,7 @@ export const viewerProfiles: {
 export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: string; palette: Palette }> = {
   about: { nav: 'About', card: 'About Me', meta: 'The Pilot • Education & background', palette: violet },
   journey: { nav: 'Journey', card: 'My Journey', meta: `${seasons.length} Seasons • ${seasons.reduce((n, s) => n + s.episodes.length, 0)} Episodes`, palette: amber },
-  originals: { nav: 'Originals', card: 'My Projects', meta: `${projects.length} Originals • 2026`, palette: crimson },
+  originals: { nav: 'Projects', card: 'Featured & More Projects', meta: `${projects.length} Featured • ${projects.length + additionalProjects.length} Total Projects`, palette: crimson },
   picks: { nav: 'Top Picks', card: 'Top Picks', meta: 'Top 10 from the resume', palette: jade },
   skills: { nav: 'Skills', card: 'My Skills', meta: `${skillCategories.length} Categories`, palette: ocean },
   moments: { nav: 'Moments', card: 'My Achievements', meta: `${achievements.length} Moments • ${certifications.length} Certifications`, palette: crimson },
