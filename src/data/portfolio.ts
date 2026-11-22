@@ -22,7 +22,6 @@ export const profile = {
   links: {
     linkedin: 'https://linkedin.com/in/rahulgupta-70196b374',
     github: 'https://github.com/2006181',
-    portfolio: 'https://portfolio-iota-rose-84.vercel.app',
   },
   resumePdf: '/Rahul_Gupta_Resume.pdf',
   portrait: {
